@@ -4,9 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sharhabeel Morad | Front-end Web Developer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=JetBrains+Mono&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/13a38875df.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>Sharhabeel Morad</h1>
+    
+    <div class="grid-container">
+        <!-- header and navigation section -->
+        <header id="nav-header">
+                <div class="logo">
+                    <a href="#hero" class="original-logo">Abel Morad</a>
+                    <a href="#hero" class="hamburger-logo">AM</a>
+                </div>
+                <nav id="nav-bar">
+                        <ul>
+                            <li><a href="#hero">HOME</a></li>
+                            <li><a href="#nav-about">ABOUT</a></li>
+                            <li><a href="#nav-experience">EXPERIENCE</a></li>
+                            <li><a href="#nav-contact">CONTACT</a></li>
+                            <li><a href="https://drive.google.com/file/d/1bSU-QYOEB89pXrut8JjFh-_JxgY4KEfT/view" target="_blank">RESUME</a></li>
+                        </ul>
+                </nav>
+
+                <button id="hamburger" onclick="hamBurger()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        </header>
+
+        <!-- side bar section -->
+        <aside>
+        </aside>
+
+        <!-- hero section -->
+        <section id="hero">
+            <div class="welcome-message">
+                <h1>Hi,<span>I am Sharhabeel Morad</span></h1>
+                <h2>I code things for the web.</h2>
+                <p><span id="auto-type"></span></p>
+            </div>
+            <div class="hero-image">
+                <!-- <lottie-player id="hero-animation" 
+                src="https://assets6.lottiefiles.com/packages/lf20_dydyldzm.json"  background="transparent"  
+                speed="1"  loop  autoplay>
+                </lottie-player> -->
+                <img src="./images/abel.jpg" id="abel-picture">
+        </section>
+
+        <!-- about me section -->
+        <span id="nav-about" class="about-border"></span>
+        <section id="about-me">
+            <div class="my-story">
+                <h1>About Me</h1>
+
+                <p>
+                    Hello! My name is Sharhabeel Morad. I am a self-taught web developer and still learning. I first interacted with basic HTML and CSS when tinkering with Friendster in 2007 to change its layout and put some background and music in my profile. I studied at Aptech Qatar Computer Education Centre and earned a Diploma in Software Engineering in 2016.
+
+                </p>
+
+                <p>
+                    I stopped programming when the COVID-19 pandemic started. I tried different things. I forgot almost everything I learned. Fast-forward mid-2022. I decided to continue my career in web development. I had to relearn everything from the basic HTML, CSS & JS. I am developing my skills and will continue to do so to become a great web developer.
+                </p>
+            
+                <p>
+                    Here is the technologies I have been working with recently:
+                </p>
+            </div>
+            <div class="tech-learned">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>javaScript</li>
+                    </ul>
+                    <ul>
+                        <li>VSCode</li>
+                        <li>GitHub</li>
+                        <li>Git</li>
+                    </ul>
+            </div>
+        </section>
+        <!-- experience section -->
+        <span id="nav-experience" class="experience-border"></span>
+        <section id="my-experience">
+            <div class="xp-menu">
+                <!-- experience menu -->
+                <h1>My Work Experience</h1>
+
+                <span class="button-menu">
+                    <button onclick="showEntrep()">
+                        <h2>ENTREPRENEUR</h2>
+                    </button>
+                    <button onclick="showFarmer()">
+                        <h2>BANANA FARMER</h2>
+                    </button>
+                    <button onclick="showTech()">
+                        <h2>IT TECHNICIAN</h2>
+                    </button>
+                </span>
+            </div>
+                <!-- experience details -->
+            <div class="xp-details">
+                <h1 id="job-title"></h1>
+                <p id="year"></p>
+                <ul id="job-description">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <!-- contact section -->
+        <span id="nav-contact" class="contact-border"></span>
+        <section id="contact">
+            <h1>Contact me!</h1>
+            <p>I am currently looking for a job opportunity and work with projects. My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+            <button class="email-button"><a href="mailto:abelmorad97@gmail.com" target="_blank">Message me</a></button>
+        </section>
+        <!-- footer section -->
+        <section id="footer">
+            <a href="https://github.com/Studentabel" target="_blank">Designed and built by Sharhabeel Morad</a> 
+        </section>
+    </div>
+    <!-- javascript link-->
+    <script src="script.js"></script>
+    <!-- script for lottie animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
