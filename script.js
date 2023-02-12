@@ -14,7 +14,8 @@ let prevScrollPos = window.pageYOffset;
         let currentScrollPos = window.pageYOffset;
         if(prevScrollPos > currentScrollPos) {
             document.getElementById("nav-header").style.top = "0";
-        } else {
+            // turns off hide nav bar at 1024px
+        } else if(window.screen.width > 1024) {
             document.getElementById("nav-header").style.top = "-100px";
         }
         prevScrollPos = currentScrollPos;
@@ -121,4 +122,20 @@ function hamBurger() {
     burgerMenuActive.classList.toggle("burger-menu-is-active");
     burgerButtonOn.classList.toggle("hamburger-is-active");
 
+    // removes the burger when you click a navlink
+    let home = document.getElementById('home');
+    let about = document.getElementById('about');
+    let xp = document.getElementById('xp');
+    let cont = document.getElementById('cont');
+    home.addEventListener('click', hideBurger);
+    about.addEventListener('click', hideBurger);
+    xp.addEventListener('click', hideBurger);
+    cont.addEventListener('click', hideBurger);
+
+    function hideBurger() {
+        burgerMenuActive.classList.remove("burger-menu-is-active");
+        burgerButtonOn.classList.remove("hamburger-is-active");
+    }
+
 }
+
