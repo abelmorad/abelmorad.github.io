@@ -175,7 +175,7 @@ body {
 #nav-bar.burger-menu-is-active {
     margin: 0 -16px;
     display: block;
-    width: 70vw;
+    width: 1000vw;
     height: 200vh;
     position: absolute;
     text-align: right;
@@ -194,20 +194,18 @@ body {
 .burger-menu-is-active ul {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
     padding-top: 1rem;
     padding-bottom: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: var(---color-primary-1)
 }
 .burger-menu-is-active ul li a {
     display: inline-block;
     padding-right: 15px;
     margin-left: auto;
     width: fit-content;
-    font-size: 2.5rem;
 }
 .burger-menu-is-active li {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 /* ------------------------------------------- */
