@@ -38,6 +38,9 @@
     height: 300px;
     width: 300px;
 }
+.bloat {
+    display: none;
+}
 body {
     background-color: var(---color-primary-1);
 }
