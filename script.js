@@ -38,10 +38,10 @@ function showDev() {
     document.getElementById("job-description").innerHTML =
      `
     <li>
-        Volunteered to create a website for Lupon Kagan Islamic Welfare Association Inc.
+        Started my endevour as a self-taught web developer
     </li>
     <li>
-        Creates website using HTML, CSS, and JavaScript
+        Volunteered to create a website for Lupon Kagan Islamic Welfare Association Inc.
     </li>`
 }
 
