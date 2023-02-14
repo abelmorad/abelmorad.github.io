@@ -23,6 +23,21 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+.loader {
+    background-color: var(---color-primary-1);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.throbber {
+    background: var(---color-primary-1);
+    height: 300px;
+    width: 300px;
+}
 body {
     background-color: var(---color-primary-1);
 }
@@ -61,7 +76,7 @@ body {
     top:0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 99;
 
     background-color: rgba(0, 0, 0, 0.9);
     height: 5em;
