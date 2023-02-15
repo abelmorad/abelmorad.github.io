@@ -1,3 +1,9 @@
+let loader = document.getElementById('pre-loader');
+
+        window.addEventListener('load', function() {
+        loader.style.display = 'none';
+})
+
 // script for smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
@@ -118,5 +124,5 @@ function hamBurger() {
         burgerMenuActive.classList.remove("burger-menu-is-active");
         burgerButtonOn.classList.remove("hamburger-is-active");
     }
-
 }
+
