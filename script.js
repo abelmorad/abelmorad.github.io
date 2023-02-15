@@ -1,8 +1,14 @@
-let loader = document.getElementById('pre-loader');
+// fakeload
+const loader = document.querySelector('.loader');
 
-        window.addEventListener('load', function() {
-        loader.style.display = 'none';
-})
+    window.addEventListener('load', () => {
+        // loader.style.display = 'none';
+        loader.classList.add('loader--hidden');
+
+        loader.addEventListener('transitionend', () => {
+            document.body.removeChild('loader');
+        })
+    })
 
 // script for smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

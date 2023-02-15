@@ -32,6 +32,11 @@
     justify-content: center;
     align-items: center;
     z-index: 100;
+    transition: opacity 2s, visibility 2s;
+}
+.loader--hidden {
+    opacity: 1;
+    visibility: hidden;
 }
 .throbber {
     background: var(---color-primary-1);
