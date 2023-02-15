@@ -36,7 +36,7 @@ let prevScrollPos = window.pageYOffset;
 // script for autotype hero
         let typed = new Typed("#auto-type",{
             strings: ["I am a web developer specialized in front-end development currently based in Davao."],
-            typeSpeed: 30,
+            typeSpeed: 60,
             loop: false
         })
 // script for work xp button show details

@@ -49,31 +49,15 @@ body {
 /* header properties */
 
 /* logo properties */
-@media (min-width:900px) {
-    .hamburger-logo {
-        display: none;
-    }
-    .logo a {
-        color: var(---color-primary-2);
-        font-family: var(--ff-logo);
-        font-size: 6vh;
-        cursor: pointer;
-    }
+.logo a {
+    color: var(---color-primary-2);
+    font-family: var(--ff-logo);
+    font-size: 6vh;
+    cursor: pointer;
 }
-
-/* hamburger logo AM */
-@media (max-width:900px) {
-
-    .original-logo {
-        display: none;
-    }
-    .hamburger-logo {
-        font-family: var(--ff-logo);
-        font-size: 6vh;
-        color: var(---color-primary-2);
-    }
+#hamburger {
+    padding-top: 14px;
 }
-
 #nav-header {
     display: flex;
     justify-content:space-between;
@@ -89,9 +73,15 @@ body {
     transition: top 0.5s;
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
     #nav-header {
         padding: 1rem 2rem;
+    }
+
+}
+@media (max-width: 480px) {
+    #nav-header {
+        padding: 1rem 1rem;
     }
 
 }
@@ -249,17 +239,9 @@ body {
     color: #FFFFFF;
     font-size: 40px;
 }
-/* replaces name with nickname */
-.welcome-message h1:hover span {
-    display: none;
-}
-.welcome-message h1:hover:after {
-    content: "call me Abel!";
-}
 .welcome-message h2 {
-    font-family: var(--ff-secondary);
+    font-family: var(--ff-primary);
     color: #FFFFFF;
-    font-style: italic;
     font-size: 24px;
 }
 .welcome-message p {
@@ -268,22 +250,6 @@ body {
     font-size: 32px;
     padding-top: 16px;
 }
-.hero-image {
-    display: block;
-    padding-top: 20%;
-    text-align: center;
-}
-.hero-image #abel-picture {
-    height: 380px;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 5px;
-    border-color: #FFFFFF;
-}
-/* #hero-animation  {
-    height: 65vh;
-    width: 50vw;
-} */
 /* ------------------------------------------- */
 
 /* about section properties */
@@ -462,44 +428,61 @@ body {
         font-weight: 100;
     }
     .welcome-message {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         margin: 0;
        }
     .welcome-message h1 {
         font-size: 32px;
-        padding-bottom: 1rem;
+        /* padding-bottom: 1rem; */
         font-weight: 600;
     }
     .welcome-message h2 {
         font-size: 20px;
         font-weight: 100;
     }
+    .what {
+        height: 200px;
+    }
     .welcome-message p {
         padding-top: 16px;
         font-size: 24px;
         font-weight: 100;
     }
-    .hero-image {
-        padding: 0;
-        padding-top: 2.5rem;
-        text-align: center;
-        display: block;
+    .msg-resume {
+        color: var(---color-primary-2);
+        font-size: 18px;
+        font-family: var(--ff-primary);
+        width: fit-content;
+        border: 1px var(---color-primary-2) solid;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: var(---color-primary-1);
     }
     /* about-me */
+    .about-border {
+        display: block;
+        height: 150px;
+        margin-top: 100px;
+        visibility: hidden;
+    }
     #about-me {
         margin: 0;
-        padding: 0 5%;
+        padding: 0rem 1rem;
     }
     #about-me p {
-        font-size: 20px;
+        font-family: var(--ff-p);
+        font-size: 18px;
     }
-    .my-story h1 {
+    .about h1 {
+        font-family: var(--ff-primary);
         font-size: 2rem;
         text-align: center;
+        padding-bottom: 1rem;
     }
-    .my-story ul li {
-        font-size: 5rem;
+    .tech-learned li {
+        font-family: var(--ff-primary);
+        font-size: 18px;
     }
     /* my-experience */
     #my-experience {
