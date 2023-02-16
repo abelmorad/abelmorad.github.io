@@ -41,7 +41,7 @@ let prevScrollPos = window.pageYOffset;
         })
 // script for work xp button show details
 // loads the the first job
-window.onload = showEntrep()
+window.onload = showDev()
 
 function showDev() {
     
@@ -54,6 +54,7 @@ function showDev() {
     </li>
     <li>
         Volunteered to create a website for Lupon Kagan Islamic Welfare Association Inc.
+        using HTML, CSS, and JS
     </li>`
 }
 
